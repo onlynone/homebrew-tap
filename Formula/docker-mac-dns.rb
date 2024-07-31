@@ -1,4 +1,4 @@
-class DockerDns < Formula
+class DockerMacDns < Formula
   include Language::Python::Virtualenv
   include Language::Python::Shebang
 
