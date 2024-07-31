@@ -1,10 +1,10 @@
-# Onlynone Docker-dns
+# Onlynone tap
 
 ## How do I install these formulae?
 
-`brew install onlynone/docker-dns/<formula>`
+`brew install onlynone/tap/<formula>`
 
-Or `brew tap onlynone/docker-dns` and then `brew install <formula>`.
+Or `brew tap onlynone/tap` and then `brew install <formula>`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
