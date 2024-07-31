@@ -4,11 +4,11 @@ class DockerDns < Formula
 
   desc "Make docker containers addressable via DNS"
   homepage "https://gitlab.com/onlynone/docker-mac-dns"
-  url "https://github.com/onlynone/docker-mac-dns/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "f4a2624c931606d33c050f0a8d3ab695ae0e14526aec2afb2e6d9a59b75d5bd8"
+  url "https://github.com/onlynone/docker-mac-dns/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "c6510e6f12b26ffcce5d3796bc1105c8fb31d8fa8b8053a58dcd50eee6162ec5"
 
-  depends_on "python@3"
   depends_on "chipmk/tap/docker-mac-net-connect"
+  depends_on "python@3"
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/71/da/e94e26401b62acd6d91df2b52954aceb7f561743aa5ccc32152886c76c96/certifi-2024.2.2.tar.gz"
@@ -65,6 +65,6 @@ class DockerDns < Formula
   end
 
   test do
-    true
+    assert_predicate bin/"docker-dns", :exist?
   end
 end
