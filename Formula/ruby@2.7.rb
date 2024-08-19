@@ -25,6 +25,7 @@ class RubyAT27 < Formula
   depends_on "openssl@3"
   depends_on "readline"
 
+  uses_from_macos "libffi"
   uses_from_macos "libxcrypt"
   uses_from_macos "zlib"
 
