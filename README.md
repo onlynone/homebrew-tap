@@ -9,7 +9,7 @@ Or `brew tap onlynone/tap` and then `brew install <formula>`.
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "onlynone/docker-dns"
+tap "onlynone/tap"
 brew "<formula>"
 ```
 
