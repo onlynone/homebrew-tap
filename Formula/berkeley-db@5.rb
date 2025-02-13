@@ -36,7 +36,7 @@ class BerkeleyDbAT5 < Formula
 
     # BerkeleyDB requires you to build everything from the build_unix subdirectory
     cd "build_unix" do
-      system "../dist/configure", *args
+      system "sh", "-x", "../dist/configure", *args
       system "make", "install"
 
       # use the standard docs location

@@ -33,6 +33,14 @@ jobs:
       - run: brew test-bot --only-formulae --root-url='https://ghcr.io/v2/onlynone/tap'
         if: github.event_name == 'pull_request'
 
+      - name: Upload configure output
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: configure output
+          path: build_unix/config.*
+          if-no-files-found: ignore
+
       - name: Upload bottles as artifact
         if: always() && github.event_name == 'pull_request'
         uses: actions/upload-artifact@v4
