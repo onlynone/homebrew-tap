@@ -4,8 +4,8 @@ class DockerMacDns < Formula
 
   desc "Make docker containers addressable via DNS"
   homepage "https://github.com/onlynone/docker-mac-dns"
-  url "https://github.com/onlynone/docker-mac-dns/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "c6510e6f12b26ffcce5d3796bc1105c8fb31d8fa8b8053a58dcd50eee6162ec5"
+  url "https://gitlab.com/onlynone/docker-mac-dns/-/archive/v1.0.2/docker-mac-dns-v1.0.2.tar.gz"
+  sha256 "1ce977c37c027fd4b9166e88a2543f3513a1cbe401d6681cf17adbd3c9d6f702"
 
   depends_on "chipmk/tap/docker-mac-net-connect"
   depends_on "python@3"
